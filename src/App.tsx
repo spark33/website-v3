@@ -1,14 +1,20 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-function App() {
+import Home from './pages/Home';
+
+const App: React.FunctionComponent = () => {
   return (
     <div className="App">
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;

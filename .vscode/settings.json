@@ -1,0 +1,20 @@
+{
+    "editor.autoFixOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true
+    },
+    "editor.formatOnSave": false,
+    "prettier.eslintIntegration": true,
+    "prettier.jsxSingleQuote": false,
+    "prettier.singleQuote": true,
+    "prettier.tslintIntegration": true,
+    "editor.codeActionsOnSave": {
+		"source.organizeImports": true
+	}
+}
