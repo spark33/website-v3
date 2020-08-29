@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/spark33.github.io/website-v3/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/spark33.github.io/website-v3/static/js/main.b3ce847c.chunk.js",
-    "main.js.map": "/spark33.github.io/website-v3/static/js/main.b3ce847c.chunk.js.map",
-    "runtime-main.js": "/spark33.github.io/website-v3/static/js/runtime-main.670e48f7.js",
-    "runtime-main.js.map": "/spark33.github.io/website-v3/static/js/runtime-main.670e48f7.js.map",
-    "static/js/2.5580adb1.chunk.js": "/spark33.github.io/website-v3/static/js/2.5580adb1.chunk.js",
-    "static/js/2.5580adb1.chunk.js.map": "/spark33.github.io/website-v3/static/js/2.5580adb1.chunk.js.map",
-    "index.html": "/spark33.github.io/website-v3/index.html",
-    "precache-manifest.cd678775ad119f7ba2338168226545f2.js": "/spark33.github.io/website-v3/precache-manifest.cd678775ad119f7ba2338168226545f2.js",
-    "service-worker.js": "/spark33.github.io/website-v3/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/spark33.github.io/website-v3/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.5580adb1.chunk.js.LICENSE.txt": "/spark33.github.io/website-v3/static/js/2.5580adb1.chunk.js.LICENSE.txt"
+    "main.css": "/website-v3/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/website-v3/static/js/main.5f01cad7.chunk.js",
+    "main.js.map": "/website-v3/static/js/main.5f01cad7.chunk.js.map",
+    "runtime-main.js": "/website-v3/static/js/runtime-main.527a09cd.js",
+    "runtime-main.js.map": "/website-v3/static/js/runtime-main.527a09cd.js.map",
+    "static/js/2.5580adb1.chunk.js": "/website-v3/static/js/2.5580adb1.chunk.js",
+    "static/js/2.5580adb1.chunk.js.map": "/website-v3/static/js/2.5580adb1.chunk.js.map",
+    "index.html": "/website-v3/index.html",
+    "precache-manifest.e1faade08a0830ce1cb01e8be1965f9e.js": "/website-v3/precache-manifest.e1faade08a0830ce1cb01e8be1965f9e.js",
+    "service-worker.js": "/website-v3/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/website-v3/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.5580adb1.chunk.js.LICENSE.txt": "/website-v3/static/js/2.5580adb1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.670e48f7.js",
+    "static/js/runtime-main.527a09cd.js",
     "static/js/2.5580adb1.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.b3ce847c.chunk.js"
+    "static/js/main.5f01cad7.chunk.js"
   ]
 }
