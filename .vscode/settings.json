@@ -13,5 +13,8 @@
     "prettier.eslintIntegration": true,
     "prettier.jsxSingleQuote": false,
     "prettier.singleQuote": true,
-    "prettier.tslintIntegration": true
+    "prettier.tslintIntegration": true,
+    "editor.codeActionsOnSave": {
+		"source.organizeImports": true
+	}
 }

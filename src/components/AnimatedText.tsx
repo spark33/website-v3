@@ -1,43 +1,49 @@
-import { Typography } from '@material-ui/core';
-import React from 'react';
-import { animated, interpolate, useTrail } from 'react-spring';
+import React from 'react'
+import { animated, interpolate, useTrail } from 'react-spring'
 
-const items = ['Lorem', 'ipsum', 'dolor', 'sit'];
-const config = { mass: 5, tension: 2000, friction: 200 };
+interface Props {
+  mass?: number
+  tension?: number
+  friction?: number
+  delay?: number
+  toggled: boolean
+}
 
-const AnimatedText: React.FunctionComponent = () => {
-  const toggle = true;
-  const trail = useTrail(items.length, {
-    config,
-    opacity: toggle ? 1 : 0,
-    x: toggle ? 0 : 20,
-    height: toggle ? 100 : 0,
-    from: { opacity: 0, x: 20, height: 0 },
-  });
+const AnimatedText: React.FC<React.PropsWithChildren<Props>> = (
+  props: React.PropsWithChildren<Props>
+) => {
+  const children = React.Children.toArray(props.children)
+  const trail = useTrail(children.length, {
+    config: {
+      mass: props.mass ? props.mass : 5,
+      tension: props.tension ? props.tension : 2000,
+      friction: props.friction ? props.friction : 500,
+    },
+    delay: props.delay ? props.delay : 0,
+    opacity: props.toggled ? 1 : 0,
+    x: props.toggled ? 20 : 0,
+    maxHeight: props.toggled ? '100%' : '0%',
+    from: { opacity: 0, x: 20, maxHeight: '0%' },
+  })
 
   return (
     <div className="trails-main">
       <div>
-        {trail.map(({ x, height, ...rest }, index) => (
+        {trail.map(({ x, maxHeight, ...rest }, index) => (
           <animated.div
-            key={items[index]}
+            key={index}
             className="trails-text"
             style={{
               ...rest,
-              transform: interpolate(
-                [x],
-                (x) => `translate3d(0,${x}px,0)`
-              ) as string,
+              transform: interpolate([x], (x) => `translate3d(0,${x}px,0)`) as string,
             }}
           >
-            <animated.div style={{ height }}>
-              <Typography variant="h1">{items[index]}</Typography>
-            </animated.div>
+            <animated.div style={{ maxHeight }}>{children[index]}</animated.div>
           </animated.div>
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AnimatedText;
+export default AnimatedText
