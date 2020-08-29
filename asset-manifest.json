@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/spark33.github.io/website-v3/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/spark33.github.io/website-v3/static/js/main.b3ce847c.chunk.js",
+    "main.js.map": "/spark33.github.io/website-v3/static/js/main.b3ce847c.chunk.js.map",
+    "runtime-main.js": "/spark33.github.io/website-v3/static/js/runtime-main.670e48f7.js",
+    "runtime-main.js.map": "/spark33.github.io/website-v3/static/js/runtime-main.670e48f7.js.map",
+    "static/js/2.5580adb1.chunk.js": "/spark33.github.io/website-v3/static/js/2.5580adb1.chunk.js",
+    "static/js/2.5580adb1.chunk.js.map": "/spark33.github.io/website-v3/static/js/2.5580adb1.chunk.js.map",
+    "index.html": "/spark33.github.io/website-v3/index.html",
+    "precache-manifest.cd678775ad119f7ba2338168226545f2.js": "/spark33.github.io/website-v3/precache-manifest.cd678775ad119f7ba2338168226545f2.js",
+    "service-worker.js": "/spark33.github.io/website-v3/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/spark33.github.io/website-v3/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.5580adb1.chunk.js.LICENSE.txt": "/spark33.github.io/website-v3/static/js/2.5580adb1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.670e48f7.js",
+    "static/js/2.5580adb1.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.b3ce847c.chunk.js"
+  ]
+}
