@@ -1,7 +1,6 @@
 import { Box, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
-
 import AnimatedText from '../components/AnimatedText'
 import theme from '../styles/theme'
 
@@ -68,7 +67,7 @@ const Home: React.FunctionComponent = () => {
       <Box
         px={{ xs: 2, lg: 24 }}
         py={{ xs: 6, md: 12, xl: 20 }}
-        pl={{ lg: 20, xl: 48 }}
+        pl={{ md: 12, lg: 16, xl: 40 }}
         pr={{ sm: 6, lg: 60 }}
       >
         <Box mb={4}>
@@ -120,6 +119,7 @@ const Home: React.FunctionComponent = () => {
           </AnimatedText>
         </Box>
       </Box>
+      <Box></Box>
     </>
   )
 }
