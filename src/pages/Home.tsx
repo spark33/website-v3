@@ -7,7 +7,7 @@ import theme from '../styles/theme'
 const links = [
   {
     text: 'Resume',
-    link: 'https://drive.google.com/file/d/1RPmhrS8cdSWuD1oc2I67fZ8mdYSVQ_Ek/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/1r65AYgNG3SsGOvC3T6S453jhO8ADcGay/view?usp=sharing',
   },
   {
     text: 'LinkedIn',
