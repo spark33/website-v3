@@ -1,44 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# spark33.github.io
 
-## Available Scripts
+Sean Park's personal site — a single, hand-built static page. No framework, no build
+step: one `index.html` with inline CSS and vanilla JS, served directly by GitHub Pages.
 
-In the project directory, you can run:
+## Design
 
-### `yarn start`
+Editorial serif (Newsreader, optical sizing), a warm 한지-paper palette, and a
+moon-phase motif wired throughout: the favicon is tonight's moon over Seoul, scrolling
+waxes the rail moon, posts show reading progress on it, and the light/dark toggle is a
+View-Transitions circular wipe out of the moon. Tufte-style sidenotes, a FLIP lightbox,
+a "where you are" breadcrumb, a print stylesheet, and full `prefers-reduced-motion`
+handling.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Routing is hash-based (`#/work/<slug>`, `#/post/<slug>`), rendered client-side from the
+`PROJ` and `POSTS` arrays near the bottom of `index.html`.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Editing
 
-### `yarn test`
+- **Projects / posts** — edit the `PROJ` and `POSTS` arrays in `index.html`
+  (marked `TODO(Sean)`). Case-study and post bodies are rendered by `renderCase()` and
+  `renderPost()`; replace the placeholder copy there.
+- **Contact email** — currently the `hello@example.com` placeholder (in the rail and the
+  home lede). Swap in the real address before sharing.
+- **Screenshots** — the `.shot` boxes are CSS placeholders. When you add real images, use
+  `object-fit: cover` and an `onError` fallback.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deploy
 
-### `yarn build`
+GitHub Pages serves this repo directly. For it to appear at the root domain
+`https://spark33.github.io/`, the repo must be named `spark33.github.io` and Pages must
+be set to build from the default branch, `/` root. `.nojekyll` disables Jekyll processing.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Known follow-ups
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Hash routing means no server-rendered per-page metadata — link previews and search
+  engines only see the root page. A static multi-page build (one HTML per project/post)
+  would fix this.
